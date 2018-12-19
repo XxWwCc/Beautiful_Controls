@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">炫酷控件</string>
+
+    <string name="btn_confirm">确定</string>
+    <string name="btn_next">Next</string>
+    <string name="title_banner">轮播</string>
+    <string name="title_animation">加载动画弹窗</string>
+</resources>
