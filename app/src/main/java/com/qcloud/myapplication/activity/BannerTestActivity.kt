@@ -1,4 +1,4 @@
-package com.qcloud.myapplication
+package com.qcloud.myapplication.activity
 
 import android.app.Activity
 import android.app.ActivityOptions
@@ -7,13 +7,14 @@ import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.transition.Explode
 import android.transition.Slide
 import android.widget.Toast
+import com.qcloud.myapplication.R
 import com.youth.banner.Banner
 import com.youth.banner.BannerConfig
 import com.youth.banner.Transformer
 import kotlinx.android.synthetic.main.activity_banner.*
+import com.qcloud.myapplication.weight.GlideImageLoader
 
 /**
  * Description：轮播图

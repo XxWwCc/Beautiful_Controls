@@ -12,7 +12,7 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -20,12 +20,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".TitleTestActivity"
+        <activity android:name=".activity.TitleTestActivity"
             android:theme="@style/TitleActivityTheme"/>
 
-        <activity android:name=".BannerTestActivity" />
-        <activity android:name=".WebViewActivity"/>
-        <activity android:name=".DialogTest"/>
+        <activity android:name=".activity.BannerTestActivity" />
+        <activity android:name=".activity.WebViewActivity"/>
+        <activity android:name=".activity.DialogTest"/>
     </application>
 
 </manifest>

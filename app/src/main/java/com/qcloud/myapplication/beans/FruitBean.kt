@@ -1,11 +1,13 @@
-package com.qcloud.myapplication
+package com.qcloud.myapplication.beans
+
+import java.io.Serializable
 
 /**
  * Description：
  * author：Smoker
  * 2018/12/3 17:51
  */
-class FruitBean {
+class FruitBean : Serializable {
     var name = ""
     var image = 0
 

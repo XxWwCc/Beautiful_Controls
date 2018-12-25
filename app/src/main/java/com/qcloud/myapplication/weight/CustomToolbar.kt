@@ -1,4 +1,4 @@
-package com.qcloud.myapplication
+package com.qcloud.myapplication.weight
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -14,6 +14,7 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
+import com.qcloud.myapplication.R
 import kotlinx.android.synthetic.main.custom_toolbar.view.*
 
 class CustomToolbar@JvmOverloads constructor (
@@ -50,19 +51,31 @@ class CustomToolbar@JvmOverloads constructor (
             try {
                 // 返回
                 isBack = typedArray.getBoolean(R.styleable.CustomBar_is_back, true)
-                backIcon = typedArray.getResourceId(R.styleable.CustomBar_back_icon, R.mipmap.icon_back)
+                backIcon = typedArray.getResourceId(
+                    R.styleable.CustomBar_back_icon,
+                    R.mipmap.icon_back
+                )
 
                 // 标题
                 isTitle = typedArray.getBoolean(R.styleable.CustomBar_is_title, true)
-                titleText = typedArray.getResourceId(R.styleable.CustomBar_title_text, R.string.app_name)
+                titleText = typedArray.getResourceId(
+                    R.styleable.CustomBar_title_text,
+                    R.string.app_name
+                )
                 titleColor = typedArray.getColor(R.styleable.CustomBar_title_color, Color.BLACK)
 
                 // 右按钮
                 isRightBtn = typedArray.getBoolean(R.styleable.CustomBar_is_right_btn, false)
-                rightBtn = typedArray.getResourceId(R.styleable.CustomBar_right_btn, R.string.btn_confirm)
+                rightBtn = typedArray.getResourceId(
+                    R.styleable.CustomBar_right_btn,
+                    R.string.btn_confirm
+                )
                 rightBtnColor = typedArray.getColor(R.styleable.CustomBar_right_btn_color, Color.BLACK)
 
-                barBackground = typedArray.getColor(R.styleable.CustomBar_bar_background, ContextCompat.getColor(mContext, R.color.colorPrimary))
+                barBackground = typedArray.getColor(
+                    R.styleable.CustomBar_bar_background, ContextCompat.getColor(mContext,
+                        R.color.colorPrimary
+                    ))
             } finally {
                 typedArray.recycle()
             }
@@ -71,7 +84,9 @@ class CustomToolbar@JvmOverloads constructor (
 
     private fun initBar() {
         toolbarView = LayoutInflater.from(mContext).inflate(R.layout.custom_toolbar, LinearLayout(mContext), false)
-        addView(toolbarView!!, LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, resources.getDimensionPixelOffset(R.dimen.appbar_height)))
+        addView(toolbarView!!, LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, resources.getDimensionPixelOffset(
+            R.dimen.appbar_height
+        )))
 
         toolbarView!!.setBackgroundColor(barBackground)
         // 标题

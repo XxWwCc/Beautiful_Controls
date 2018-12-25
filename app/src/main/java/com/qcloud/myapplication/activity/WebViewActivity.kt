@@ -1,4 +1,4 @@
-package com.qcloud.myapplication
+package com.qcloud.myapplication.activity
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -10,10 +10,8 @@ import android.webkit.WebSettings
 import android.webkit.WebView
 import com.github.lzyzsd.jsbridge.BridgeWebView
 import com.github.lzyzsd.jsbridge.BridgeWebViewClient
-import io.reactivex.Observable
+import com.qcloud.myapplication.R
 import kotlinx.android.synthetic.main.activity_webview.*
-import java.util.concurrent.TimeUnit
-import io.reactivex.android.schedulers.AndroidSchedulers
 
 
 /**

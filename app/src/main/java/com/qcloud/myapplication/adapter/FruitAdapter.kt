@@ -1,4 +1,4 @@
-package com.qcloud.myapplication
+package com.qcloud.myapplication.adapter
 
 import android.content.Context
 import android.content.Intent
@@ -9,7 +9,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import com.qcloud.myapplication.beans.FruitBean
 import com.bumptech.glide.Glide
+import com.qcloud.myapplication.R
+import com.qcloud.myapplication.activity.TitleTestActivity
 
 /**
  * Description：

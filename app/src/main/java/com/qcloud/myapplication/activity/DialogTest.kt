@@ -1,4 +1,4 @@
-package com.qcloud.myapplication
+package com.qcloud.myapplication.activity
 
 import android.app.Activity
 import android.app.ActivityOptions
@@ -8,6 +8,8 @@ import android.os.Build
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.transition.Explode
+import com.qcloud.myapplication.R
+import com.qcloud.myapplication.weight.LoadingDialog
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import kotlinx.android.synthetic.main.activity_dialog_test.*

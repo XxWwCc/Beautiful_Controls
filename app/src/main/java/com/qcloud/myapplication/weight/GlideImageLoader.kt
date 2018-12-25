@@ -1,4 +1,4 @@
-package com.qcloud.myapplication
+package com.qcloud.myapplication.weight
 
 import android.content.Context
 import android.widget.ImageView

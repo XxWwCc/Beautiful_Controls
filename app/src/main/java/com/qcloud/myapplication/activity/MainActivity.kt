@@ -1,17 +1,19 @@
-package com.qcloud.myapplication
+package com.qcloud.myapplication.activity
 
+import com.qcloud.myapplication.adapter.FruitAdapter
 import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.design.widget.NavigationView
 import android.support.design.widget.Snackbar
 import android.support.v4.view.GravityCompat
 import android.support.v7.widget.GridLayoutManager
 import android.transition.Slide
 import android.view.View
 import android.widget.Toast
+import com.qcloud.myapplication.beans.FruitBean
+import com.qcloud.myapplication.R
 import kotlinx.android.synthetic.main.activity_main.*
-import java.util.*
+import com.qcloud.myapplication.weight.CustomToolbar
 import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity() {
